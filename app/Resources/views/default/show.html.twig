@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 jobs-list-wrapper">
+                {% for job  in jobs %}
+                    <div class="single-job row">
+                        <div class="col-md-8">
+                            <p><a class="job-link" href="{{ job.href }}">{{ job.title }}</a></p>
+                            <p class="job-company-title">{{ job.company }}</p>
+                            <button type="button" class="add-favorite">+</button>
+                        </div>
+                        <div class="col-md-4 text-right">
+                            {% if job.image %}
+                                <img class="job-image" src="{{ job.image }}" alt="job-image">
+                                <p class="job-date">{{ job.date }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

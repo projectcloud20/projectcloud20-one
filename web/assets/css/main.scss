@@ -1,0 +1,88 @@
+html body {
+  background: #F5F5F5!important;
+  font-family: 'Mina' !important;
+}
+.header{
+  .main-header{
+    font-size: 3.5em;
+  }
+  .main-logo-image{
+    width: 25%;
+  }
+}
+.btn.btn-primary.submit-button.btn:not(:disabled):not(.disabled){
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 25px;
+  background-color: rgb(38, 221, 242);
+  border:none;
+  transition: background-color .5s;
+  &:hover {
+    background-color: rgb(4, 213, 237);
+  }
+  &:active {
+    border: none;
+    background-color: rgb(4, 213, 237);
+  }
+}
+.jobs-list-wrapper{
+  .single-job{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top: 1px solid rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(0,0,0,.12);
+  }
+}
+.add-favorite{
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+// Adaptive
+@media (max-width: 356px) {
+  .header{
+    .main-logo-image {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header{
+    .main-header{
+      font-size: 1.5em;
+    }
+    .main-logo-image {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header{
+    .main-header{
+      font-size: 2.5em;
+    }
+    .main-logo-image {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    .main-logo-image {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    .main-logo-image {
+      width: 35%;
+    }
+  }
+}
